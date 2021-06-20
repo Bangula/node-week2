@@ -8,9 +8,9 @@ http.get(process.argv[2], (response) => {
       if (err) {
         return console.log(err);
       }
-      data = data.toString();
-      console.log(data.length);
-      return console.log(data);
+      let result = data.toString();
+      console.log(result.length);
+      return console.log(result);
     })
   );
 });
